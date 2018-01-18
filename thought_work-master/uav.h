@@ -35,17 +35,17 @@ class UAV
 public:
     UAV();
 
-
-
+	void setUAVsignal(std::string str);
  private:
     void redconfig();
     void readuavfile();
+	void rulejudge();
 
 private:
     std::string filename;
     std::string uavname;
-   std::vector<std::vector<int>>  uavpath;
-   std::vector<int>  signal;
+    std::vector<std::vector<int>>  uavpath;
+	std::vector<int> UAVsignal;
 };
 
 #endif // UAV_H
